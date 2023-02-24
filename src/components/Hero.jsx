@@ -5,10 +5,9 @@ import heroVid from '../assets/video.mp4';
 
 const Hero = () => {
   return (
-    <div style={{position:"absolute",width:"100%",height:"100%"}}>
     <div className='w-full h-[90vh] top-[90px]'>
       <video
-        className=' absolute -z-10'
+        className='object-cover h-[90vh] w-full absolute -z-10'
         src={heroVid}
         autoPlay
         loop
@@ -41,7 +40,6 @@ const Hero = () => {
         </div>
       </div>
       
-    </div>
     </div>
   );
 };

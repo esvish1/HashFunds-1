@@ -5,7 +5,7 @@ import AboutCard from './AboutCard';
 
 const About = () => {
   return (
-    <div className='absolute w-full bg-black text-white text-center'>
+    <div className='relative w-full bg-black text-white text-center'>
       <div className='max-w-[1240px] mx-auto px-4 py-16 '>
         <div>
           <h1 className='py-4'>A Decentralized Fundraising Platform</h1>

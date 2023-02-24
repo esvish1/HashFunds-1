@@ -6,7 +6,7 @@ import { FaEthereum } from 'react-icons/fa'
 
 const Projects = ({ projects }) => {
   return (
-    <div className="flex flex-col px-5 mb-7" style={{width:"90%",position:"relative",left:"80px"}}>
+    <div className="flex flex-col px-5 mb-7">
       <div className="flex justify-center items-center flex-wrap ">
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />

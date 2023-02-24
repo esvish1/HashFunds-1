@@ -2,7 +2,7 @@ import React from 'react'
 import {AiFillFacebook, AiFillGoogleCircle, AiFillMail, AiFillYoutube, AiOutlineWhatsApp} from 'react-icons/ai'
 const Footer = () => {
   return (
-    <div className='bg-black text-white text-center py-16'>
+    <div className='relative bg-black text-white text-center py-16'>
         <div className='max-w-[1240px] mx-auto px-4 grid grid-cols-2 lg:grid-cols-4'>
             <div>
             <h1 setsize={10}>Follow Us</h1>
@@ -11,7 +11,6 @@ const Footer = () => {
         rounded-full bg-black-700 mx-1.5 text-xl '>
                 <div className='flex flex-row space-x-10'>
                 <AiFillFacebook/>
-                <AiFillYoutube/>
                 <AiOutlineWhatsApp/>
                 <br></br>
                 <AiFillMail/>

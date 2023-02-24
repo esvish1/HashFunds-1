@@ -17,10 +17,10 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <div style={{position:"relative",top:"700px",backgroundColor:"black"}}><Projects projects={projects} /></div>
-      <div style={{position:"relative",top:"660px",backgroundColor:"black"}}><About /></div>
-      <div style={{position:"relative",top:"1350px",backgroundColor:"black"}}><Subscribe /></div>
-      <div style={{position:"relative",top:"1300px",backgroundColor:"black"}}><Footer /></div>
+      <div style={{position:"relative",backgroundColor:"black"}}><Projects projects={projects} /></div>
+      <About />
+      <Subscribe />
+      <Footer />
       
     </>
   )
