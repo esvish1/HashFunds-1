@@ -16,11 +16,13 @@ const Home = () => {
   }, [])
   return (
     <>
-      <Hero />
-      <div style={{position:"relative",backgroundColor:"black"}}><Projects projects={projects} /></div>
+    <Hero />
+    <div style={{backgroundColor:"black"}}>
+      <Projects projects={projects} />
       <About />
       <Subscribe />
       <Footer />
+      </div>
       
     </>
   )

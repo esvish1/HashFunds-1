@@ -1,17 +1,17 @@
-import Identicons from 'react-identicons'
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { truncate, daysRemaining } from '../store'
 import { FaEthereum } from 'react-icons/fa'
 
 const Projects = ({ projects }) => {
   return (
+    <div style={{position:"relative",backgroundColor:"black"}}>
     <div className="flex flex-col px-5 mb-7">
       <div className="flex justify-center items-center flex-wrap ">
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
+    </div>
     </div>
   )
 }

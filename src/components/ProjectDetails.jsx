@@ -1,4 +1,3 @@
-import Identicons from 'react-identicons'
 import { FaEthereum } from 'react-icons/fa'
 import {
   daysRemaining,

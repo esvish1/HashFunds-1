@@ -3,7 +3,6 @@ pragma solidity ^0.8.7;
 
 contract Genesis {
     address public owner;
-    uint public projectTax;
     uint public projectCount;
     uint public balance;
     statsStruct public stats;
@@ -60,9 +59,8 @@ contract Genesis {
         uint256 timestamp
     );
 
-    constructor(uint _projectTax) {
+    constructor() {
         owner = msg.sender;
-        projectTax = _projectTax;
     }
 
     function createProject(
@@ -203,12 +201,10 @@ contract Genesis {
 
     function performPayout(uint id) internal {
         uint raised = projects[id].raised;
-        uint tax = (raised * projectTax) / 100;
 
         projects[id].status = statusEnum.PAIDOUT;
 
-        payTo(projects[id].owner, (raised - tax));
-        payTo(owner, tax);
+        payTo(projects[id].owner, raised);
 
         balance -= projects[id].raised;
 
@@ -244,9 +240,7 @@ contract Genesis {
         return true;
     }
 
-    function changeTax(uint _taxPct) public ownerOnly {
-        projectTax = _taxPct;
-    }
+
 
     function getProject(uint id) public view returns (projectStruct memory) {
         require(projectExist[id], "Project not found");
