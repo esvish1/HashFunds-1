@@ -12,7 +12,7 @@ const ProjectDetails = ({ project }) => {
   const expired = new Date().getTime() > Number(project?.expiresAt + '000')
 
   return (
-    <div  className="pt-24 mb-5 px-6 flex justify-center">
+    <div  className=" pt-24 mb-5 px-6 flex justify-center">
       <div className="flex justify-center flex-col md:w-2/3">
         <div 
           className="flex justify-start items-start

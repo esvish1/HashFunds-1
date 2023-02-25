@@ -17,12 +17,10 @@ const Home = () => {
   return (
     <>
     <Hero />
-    <div style={{backgroundColor:"black"}}>
       <Projects projects={projects} />
       <About />
       <Subscribe />
       <Footer />
-      </div>
       
     </>
   )

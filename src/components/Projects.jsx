@@ -4,7 +4,7 @@ import { FaEthereum } from 'react-icons/fa'
 
 const Projects = ({ projects }) => {
   return (
-    <div style={{position:"relative",backgroundColor:"black"}}>
+    <div style={{position:"relative"}}>
     <div className="flex flex-col px-5 mb-7">
       <div className="flex justify-center items-center flex-wrap ">
         {projects.map((project, i) => (

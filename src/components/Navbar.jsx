@@ -3,7 +3,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
 import { connectWallet } from '../services/blockchain'
 import { truncate, useGlobalState } from '../store'
-import logoo from './project.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -13,7 +12,7 @@ const Navbar = () => {
     const [connectedAccount] = useGlobalState('connectedAccount')
 
   return (
-    <div className='w-full h-[90px] bg-black'>
+    <div className='w-full h-[90px]'>
       <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
         <div>
           <h1 className='text-[#00d8ff]'>HashFunds.</h1>

@@ -20,12 +20,13 @@ const Project = () => {
     setLoaded(true)
   }, [])
   return loaded ? (
-    <>
+    <><div className="bg-white ">
       <ProjectDetails project={project} />
       <UpdateProject project={project} />
       <DeleteProject project={project} />
       <BackProject project={project} />
       <ProjectBackers backers={backers} />
+      </div>
     </>
   ) : null
 }

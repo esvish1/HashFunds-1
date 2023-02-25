@@ -5,7 +5,7 @@ import { truncate } from '../store'
 
 const ProjectBackers = ({ backers }) => {
   return (
-    <div className="flex flex-col justify-center items-start md:w-2/3 px-6 mx-auto">
+    <div className=" flex flex-col justify-center items-start md:w-2/3 px-6 mx-auto">
       <div
         className="max-h-[calc(100vh_-_25rem)] overflow-y-auto
         shadow-md rounded-md w-full mb-10"
