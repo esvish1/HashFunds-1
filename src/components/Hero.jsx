@@ -5,26 +5,26 @@ import heroVid from '../assets/video.mp4';
 
 const Hero = () => {
   return (
-    <div className='w-full h-[90vh] top-[90px]'>
+    <div className='relative w-full h-[90vh] top-[5px]'>
       <video
-        className='object-cover h-[90vh] w-full absolute -z-10'
+        className='object-cover h-[100vh] w-full'
         src={heroVid}
         autoPlay
         loop
         muted
       />
-      <div className='w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center'>
+      <div className='absolute top-5 w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center'>
         <h1>Get Involved</h1>
         <h1 className='py-2'>
           <strong className="blue">
         <Typical
              steps={[
                      'Lend The Helping Hand',
-                  2000,
+                  3000,
                   'Without Any Reason',
-                  2000,
+                  3000,
                   'No Matter How Small',
-                  2000,
+                  3000,
                 ]}
                 wrapper="p"
                 loop={Infinity}
