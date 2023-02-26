@@ -61,8 +61,8 @@ const BackProject = ({ project }) => {
             border-0 text-sm text-slate-500 focus:outline-none
             focus:ring-0"
               type="number"
-              step={0.01}
-              min={0.01}
+              step={0.000001}
+              min={0}
               name="amount"
               placeholder="Amount (ETH)"
               onChange={(e) => setAmount(e.target.value)}

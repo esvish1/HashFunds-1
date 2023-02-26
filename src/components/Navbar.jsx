@@ -22,7 +22,6 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li>About</li>
             <li><Link to="/Causes">Causes</Link></li>
-            <li>Blogs</li>
             <li>Contact</li>
             <div className="flex space-x-2 justify-center">
         {connectedAccount ? (
@@ -57,10 +56,9 @@ const Navbar = () => {
         <div className={nav ? 'w-full bg-black text-white absolute z-50 top-[90px] left-0 flex justify-center text-center' : 
     'absolute left-[-100%]'}>
           <ul>
-            <li className='text-2xl'>Home</li>
+          <li className='text-2xl'><Link to="/">Home</Link></li>
             <li className='text-2xl'>About</li>
-            <li className='text-2xl'>Causes</li>
-            <li className='text-2xl'>Blogs</li>
+            <li className='text-2xl'><Link to="/Causes">Causes</Link></li>
             <li className='text-2xl'>Contact</li>
             <div className="flex space-x-2 justify-center">
         {connectedAccount ? (
