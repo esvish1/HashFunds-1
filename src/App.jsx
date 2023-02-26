@@ -9,6 +9,7 @@ import { isWallectConnected } from './services/blockchain'
 import { ToastContainer } from 'react-toastify'
 import Navbar from './components/Navbar'
 import particlesOptions from "./particles.json";
+import Causes from './components/Causes';
 const App = () => {
   const [loaded, setLoaded] = useState(false)
   const particlesInit = useCallback(main => {
@@ -29,6 +30,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:id" element={<Project />} />
+          <Route path="/Causes" element={<Causes />} />
+
         </Routes>
       ) : null}
 

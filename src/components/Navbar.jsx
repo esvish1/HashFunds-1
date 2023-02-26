@@ -19,9 +19,9 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex'>
           <ul className='flex text-white items-center'>
-            <li>Home</li>
+            <li><Link to="/">Home</Link></li>
             <li>About</li>
-            <li>Causes</li>
+            <li><Link to="/Causes">Causes</Link></li>
             <li>Blogs</li>
             <li>Contact</li>
             <div className="flex space-x-2 justify-center">
