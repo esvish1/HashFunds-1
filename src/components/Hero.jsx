@@ -1,6 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
-
+import { Link } from 'react-router-dom'
 import heroVid from '../assets/video.mp4';
 
 const Hero = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
         </p>
         <div>
           <button className='m-2'>Fundraise</button>
-          <button className='m-2'>Donate</button>
+          <Link to="/Causes"><button className='m-2'>Donate</button></Link>
         </div>
       </div>
       
