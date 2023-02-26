@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={nav ? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center' : 
+        <div className={nav ? 'w-full bg-black text-white absolute z-50 top-[90px] left-0 flex justify-center text-center' : 
     'absolute left-[-100%]'}>
           <ul>
             <li className='text-2xl'>Home</li>
