@@ -6,7 +6,7 @@ const Projects = ({ projects }) => {
   return (
     <div style={{position:"relative"}}>
     <div className="flex flex-col px-5 mb-7">
-      <div className="flex justify-center items-center flex-wrap ">
+      <div className="flex justify-center items-center flex-wrap px-5 mb-7 ">
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}

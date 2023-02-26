@@ -34,17 +34,17 @@
     "events": {
       "onClick": {
         "enable": true,
-        "mode": []
+        "mode": "push"
       },
       "onDiv": {
         "selectors": [],
-        "enable": true,
+        "enable": false,
         "mode": [],
         "type": "circle"
       },
       "onHover": {
-        "enable": false,
-        "mode": [],
+        "enable": true,
+        "mode": "trail",
         "parallax": {
           "enable": true,
           "force": 2,
@@ -132,17 +132,17 @@
         "area": {
           "gradient": {
             "start": {
-              "value": "3b5e98"
+              "value": "#ffffff"
             },
             "stop": {
-              "value": "#17163e"
+              "value": "#000000"
             }
           },
           "radius": 1000
         },
         "shadow": {
           "color": {
-            "value": "#17163e"
+            "value": "#000000"
           },
           "length": 2000
         }
@@ -386,14 +386,17 @@
         "enable": false,
         "minimumValue": 0
       },
-      "value": 0,
+      "value": {
+        "min": 0,
+        "max": 360
+      },
       "animation": {
         "enable": true,
-        "speed": 5,
+        "speed": 30,
         "decay": 0,
         "sync": false
       },
-      "direction": "clockwise",
+      "direction": "random",
       "path": false
     },
     "destroy": {
@@ -424,31 +427,37 @@
     },
     "roll": {
       "darken": {
-        "enable": false,
-        "value": 0
+        "enable": true,
+        "value": 25
       },
-      "enable": false,
+      "enable": true,
       "enlighten": {
         "enable": false,
         "value": 0
       },
       "mode": "vertical",
-      "speed": 25
+      "speed": {
+        "min": 5,
+        "max": 15
+      }
     },
     "tilt": {
       "random": {
         "enable": false,
         "minimumValue": 0
       },
-      "value": 0,
+      "value": {
+        "min": 0,
+        "max": 360
+      },
       "animation": {
-        "enable": false,
-        "speed": 0,
+        "enable": true,
+        "speed": 30,
         "decay": 0,
         "sync": false
       },
-      "direction": "clockwise",
-      "enable": false
+      "direction": "random",
+      "enable": true
     },
     "twinkle": {
       "lines": {
@@ -463,10 +472,13 @@
       }
     },
     "wobble": {
-      "distance": 5,
-      "enable": false,
+      "distance": 30,
+      "enable": true,
       "speed": {
-        "angle": 50,
+        "angle": {
+          "min": -7,
+          "max": 7
+        },
         "move": 10
       }
     },

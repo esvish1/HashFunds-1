@@ -13,7 +13,7 @@ const Causes = () => {
     }, [])
     return (
       <>
-      <div className="flex bg-white justify-center items-center mt-10">
+      <div className="flex bg-white justify-center items-center">
         <div
           className="flex flex-col justify-center items-center
           h-20 border shadow-md w-full"
