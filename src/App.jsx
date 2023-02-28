@@ -10,6 +10,9 @@ import { ToastContainer } from 'react-toastify'
 import Navbar from './components/Navbar'
 import particlesOptions from "./particles.json";
 import Causes from './components/Causes';
+import Contact from './components/Contact';
+import Chat from './components/Chat';
+
 const App = () => {
   const [loaded, setLoaded] = useState(false)
   const particlesInit = useCallback(main => {
@@ -26,11 +29,14 @@ const App = () => {
     <div className="min-h-screen relative">
       <Particles options={particlesOptions} init={particlesInit}/>
       <Navbar />
+      <Chat />
       {loaded ? (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:id" element={<Project />} />
           <Route path="/Causes" element={<Causes />} />
+          <Route path="/Contact" element={<Contact />} />
+          
 
         </Routes>
       ) : null}
