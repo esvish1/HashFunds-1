@@ -12,6 +12,8 @@ import particlesOptions from "./particles.json";
 import Causes from './components/Causes';
 import Contact from './components/Contact';
 import Chat from './components/Chat';
+import Fundraise from './components/Fundraise';
+
 
 const App = () => {
   const [loaded, setLoaded] = useState(false)
@@ -36,6 +38,7 @@ const App = () => {
           <Route path="/projects/:id" element={<Project />} />
           <Route path="/Causes" element={<Causes />} />
           <Route path="/Contact" element={<Contact />} />
+           <Route path="/Fundraise" element={<Fundraise />} />
           
 
         </Routes>
