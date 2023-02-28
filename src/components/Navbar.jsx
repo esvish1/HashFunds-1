@@ -12,6 +12,7 @@ const Navbar = () => {
     const [connectedAccount] = useGlobalState('connectedAccount')
 
   return (
+    <div className='navigation'>
     <div className='w-full h-[90px]'>
       <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
         <div>
@@ -19,13 +20,19 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex'>
           <ul className='flex text-white items-center'>
-            <li><Link to="/">Home</Link></li>
-            <li>About</li>
-            <li><Link to="/Causes">Causes</Link></li>
-            <li>Contact</li>
+            
+          <nav className="navv">
+            <ul style={{display:'flex',listStyle:'none',margin:0,padding:0}}>
+            <li style={{marginRight:10}}><Link to="/">Home</Link></li>
+            <li style={{marginRight:10}}><Link to="/About">About</Link></li>
+            <li style={{marginRight:10}}><Link to="/Causes">Causes</Link></li>
+            <li style={{marginRight:10}}><Link to="/Contact">Contact</Link></li>
+            </ul>
+          </nav>
             <div className="flex space-x-2 justify-center">
         {connectedAccount ? (
           <button
+          style={{background:"#38C6DF"}}
             type="button"
             className="inline-block px-6 py-2.5 bg-blue-600
             text-white font-medium text-xs leading-tight uppercase
@@ -82,6 +89,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };

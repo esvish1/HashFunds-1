@@ -35,3 +35,27 @@
     @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-3xl
   }
 }
+
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+
+a:hover {
+  color: #ffffff9f;
+}
+
+a:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
