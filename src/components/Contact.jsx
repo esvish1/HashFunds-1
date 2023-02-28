@@ -28,7 +28,7 @@ const ContactPage = () => {
     
     <div className='absolute bg-white'>
     <div style={{position:'absolute',top:'1050px',width:'750px',left:'80px'}}>
-    <div className="bg-gray-100">
+    <div className="sm:rounded-lg bg-gray-100">
       <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
         <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <div className="p-6 bg-white border-b border-gray-200">
@@ -102,22 +102,21 @@ const ContactPage = () => {
 
 
     <div style={{position:'absolute',top:'1050px',width:'500px',left:'920px'}}>
-    <div className="bg-gray-100">
+    <div className="group sm:rounded-lg bg-gray-100 hover:bg-sky-500 hover:text-white-900">
       <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
-        <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-          <div className="p-6 bg-white border-b border-gray-200">
-            <h2 className="text-2xl font-extrabold text-gray-900">HEADQUATERS</h2>
-            <form className="mt-8 space-y-6">
+        <div className="bg-white hover:bg-sky-500 overflow-hidden shadow-sm sm:rounded-lg">
+          <div className="group p-6 bg-white  border-b border-gray-200">
+            <h2 className=" text-2xl font-extrabold text-gray-900">HEADQUATERS</h2>
+            <form className=" mt-8 space-y-6">
               <div>
                   <div class="col-md-4 align-l" data-ckav-sm="align-c mr-t-30" data-animate-in="fadeInRight">
-                    <p class="mr-b-40 fs16">St.Josephs College of Engineering & Technology, <br /> Choondacheery (P.O), Palai, <br /> India.</p>
+                    <p className=" mr-b-40 fs16">St.Josephs College of Engineering & Technology, <br /> Choondacheery (P.O), Palai, <br /> India.</p>
                     <br />
-                    <p class="mr-0 fs16"><strong class="f-1 bold-4 ltr-2 txt-dark">Phone: </strong>+1234567890</p>
-                    <p class="mr-0 fs16"><strong class="f-1 bold-4 ltr-2 txt-dark">FAX: </strong>+0986754321</p>
-                    <p class="mr-0 fs16"><strong class="f-1 bold-4 ltr-2 txt-dark">Email: </strong>hashfunds@gmail.com</p>
+                    <p class="mr-0 fs16"><strong class=" f-1 bold-4 ltr-2 txt-dark">Phone: </strong>+1234567890</p>
+                    <p class="mr-0 fs16"><strong class=" f-1 bold-4 ltr-2 txt-dark">FAX: </strong>+0986754321</p>
+                    <p class="mr-0 fs16"><strong class=" f-1 bold-4 ltr-2 txt-dark">Email: </strong>hashfunds@gmail.com</p>
                   </div>
               </div>
-
             </form>
           </div>
         </div>

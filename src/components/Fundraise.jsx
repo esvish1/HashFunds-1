@@ -34,7 +34,7 @@ const Fundraise = () => {
     <div className='w-106 m-40 text-left'>
 
     <div style={{position:'absolute',top:'600px',width:'800px',left:'350px'}}>
-    <div className="bg-gray-200">
+    <div className="sm:rounded-lg bg-gray-200">
     <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
         <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <div className="p-6 bg-white border-b border-gray-200">
@@ -83,7 +83,6 @@ const Fundraise = () => {
             />
             {errors?.email?.type === "pattern" && (<p className='text-red-500'>Please write correct email address</p>)}
 
-Shaalooom, [28-02-2023 15:45]
 <label className='block text-gray-700 text-sm font-bold mt-3 mb-2'>Country</label>
             <input className='shadow appearance-none border rounded w-full py-2 px-3 textgray-700 leading-tight focus:outline-none focus:shadow-outline' type="text" id="country" placeholder='India'
             {...register("country", {
@@ -138,6 +137,10 @@ Shaalooom, [28-02-2023 15:45]
                 <input type="checkbox" id="t" name="t" value="aid" />  Transplant
                 <br></br>
                 <input type="checkbox" id="t" name="t" value="aid" />  Cancer
+                <br></br>
+                <input type="checkbox" id="t" name="t" value="aid" />  Education
+                <br></br>
+                <input type="checkbox" id="t" name="t" value="aid" />  Others
                 <br></br>
                
             </div>
