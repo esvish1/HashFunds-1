@@ -13,7 +13,7 @@ import Causes from './components/Causes';
 import Contact from './components/Contact';
 import Chat from './components/Chat';
 import Fundraise from './components/Fundraise';
-
+import AboutPage from './components/AboutPage';
 
 const App = () => {
   const [loaded, setLoaded] = useState(false)
@@ -39,7 +39,8 @@ const App = () => {
           <Route path="/Causes" element={<Causes />} />
           <Route path="/Contact" element={<Contact />} />
            <Route path="/Fundraise" element={<Fundraise />} />
-          
+           <Route path="/AboutPage" element={<AboutPage />} />
+
 
         </Routes>
       ) : null}

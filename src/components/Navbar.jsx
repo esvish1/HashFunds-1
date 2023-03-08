@@ -24,7 +24,7 @@ const Navbar = () => {
           <nav className="navv">
             <ul style={{display:'flex',listStyle:'none',margin:0,padding:0}}>
             <li style={{marginRight:10}}><Link to="/">Home</Link></li>
-            <li style={{marginRight:10}}><Link to="/About">About</Link></li>
+            <li style={{marginRight:10}}><Link to="/AboutPage">About</Link></li>
             <li style={{marginRight:10}}><Link to="/Causes">Causes</Link></li>
             <li style={{marginRight:10}}><Link to="/Contact">Contact</Link></li>
             </ul>

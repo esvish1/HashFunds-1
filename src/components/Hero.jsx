@@ -20,11 +20,11 @@ const Hero = () => {
         <Typical
              steps={[
                      'Lend The Helping Hand',
-                  3000,
+                  2000,
                   'Without Any Reason',
-                  3000,
+                  2000,
                   'No Matter How Small',
-                  3000,
+                  2000,
                 ]}
                 wrapper="p"
                 loop={Infinity}

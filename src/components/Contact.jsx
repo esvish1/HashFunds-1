@@ -1,6 +1,7 @@
 import React from 'react'
 import Img1 from '../assets/mountain.webp'
 import Footer from '../components/Footer';
+import {AiFillFacebook, AiFillGoogleCircle, AiFillMail, AiFillYoutube, AiOutlineWhatsApp} from 'react-icons/ai'
 
 
 const ContactPage = () => {
@@ -14,6 +15,7 @@ const ContactPage = () => {
           src={Img1}
           alt="My image" 
         />
+        
 
         <div class="absolute top-40 left-40 px-0 py-9">
           <h1 class="mb-3 text-xl-300 font-semibold tracking-tight text-white">Contact Us</h1>
@@ -28,7 +30,7 @@ const ContactPage = () => {
     
     <div className='absolute bg-white'>
     <div style={{position:'absolute',top:'1050px',width:'750px',left:'80px'}}>
-    <div className="sm:rounded-lg bg-gray-100">
+    <div className="sm:rounded-lg bg-gray-100 hover:bg-gray-300 hover:text-white-900">
       <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
         <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <div className="p-6 bg-white border-b border-gray-200">
@@ -102,7 +104,7 @@ const ContactPage = () => {
 
 
     <div style={{position:'absolute',top:'1050px',width:'500px',left:'920px'}}>
-    <div className="group sm:rounded-lg bg-gray-100 hover:bg-sky-500 hover:text-white-900">
+    <div className="group sm:rounded-lg bg-gray-100 hover:bg-gray-300 hover:text-white-900">
       <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
         <div className="bg-white hover:bg-sky-500 overflow-hidden shadow-sm sm:rounded-lg">
           <div className="group p-6 bg-white  border-b border-gray-200">
@@ -122,6 +124,98 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </div>
+    </div>
+
+
+
+    //Footer//
+    <hr style={{position:"absolute",top:"1850px",width:'1519px'}} className="styled-line"/>
+
+  <div  style={{position:"absolute",top:"1850px",left:'100px'}}>
+  <div className='w-full py-16 text-white px-4'>
+      <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
+        <div className='lg:col-span-2 my-4'>
+          <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
+            Want Updates of HashFunds?
+          </h1>
+          <p>Sign up to our Newsletter and Stay up to Date.</p>
+        </div>
+        <div className='my-4'>
+          <div className='flex flex-col sm:flex-row items-center justify-between w-full'>
+            <input
+              className='p-3 flex w-full rounded-md text-black'
+              type='email'
+              placeholder='Enter Email'
+            />
+            <button className='bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3'>
+              Notify Me
+            </button>
+          </div>
+          <p>
+            We Care about the Protection of your Data.{' '}
+            <span className='text-[#00df9a]'></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div style={{position:"absolute",top:"2050px",left:'80px'}}>
+  <div className='relative  text-white text-center py-16'>
+        <div className='max-w-[5000px] mx-auto px-4 grid grid-cols-2 lg:grid-cols-4'>
+            <div >
+            <h1 setsize={10}>Follow Us</h1>
+            <br></br>
+             <div className='p-2 cursor-pointer inline-flex items-center
+        rounded-full bg-black-700 mx-1.5 text-xl '>
+                <div className='flex flex-row space-x-10'>
+                <AiFillFacebook/>
+                <AiOutlineWhatsApp/>
+                <br></br>
+                <AiFillMail/>
+                <AiFillGoogleCircle/>
+                </div>
+             </div>
+             </div>   
+            {/* <div>
+                
+                <h3 className='font-bold text-xl border-b-4 border-[#00d8ff] inline-block mt-4'>Quick Link</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Blog Post</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 className='font-bold text-xl border-b-4 border-[#00d8ff] inline-block mt-4'>Get in Touch</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 className='font-bold text-xl border-b-4 border-[#00d8ff] inline-block mt-4'>Causes</h3>
+                <ul>
+                    <li>Medical</li>
+                    <li>Cancer</li>
+                    <li>Transplant</li>
+                    <li>Education</li>
+                </ul>
+            </div>   */}
+              
+        </div>
+        <div style={{position:"absolute", left:'920px',width:'279px',bottom:'80px'}}
+        className="text-gray-400 text-sm pb-8 "
+      >
+        <span>© 2023 HashFunds. All rights reserved.</span>
+        {/* <span> Terms · Privacy Policy</span> */}
+        
+      </div>
     </div>
     </div>
 

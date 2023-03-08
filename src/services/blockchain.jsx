@@ -57,11 +57,17 @@ const isWallectConnected = async () => {
 //   }
 // }
 const getEtheriumContract = async () => {
-  const provider = new ethers.providers.Web3Provider(ethereum)
-  const signer = provider.getSigner()
-  const contract = new ethers.Contract(contractAddress, contractAbi, signer)
+  const connectedAccount = getGlobalState('connectedAccount')
 
-  return contract
+  if (connectedAccount) {
+    const provider = new ethers.providers.Web3Provider(ethereum)
+    const signer = provider.getSigner()
+    const contract = new ethers.Contract(contractAddress, contractAbi, signer)
+
+    return contract
+  } else {
+    return getGlobalState('contract')
+  }
 }
 
 
