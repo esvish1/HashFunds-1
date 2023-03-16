@@ -7,7 +7,7 @@ module.exports = {
     localhost: {
       url: 'http://127.0.0.1:8545',
     },
-   goerli: {
+   polygon_mumbai: {
       url: process.env.ENDPOINT_URL,
       accounts: [process.env.DEPLOYER_KEY]
     }

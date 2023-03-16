@@ -28,9 +28,9 @@ const Fundraise = () => {
       }
     };
     const slides = [
-        "https://ih1.redbubble.net/image.3538509645.0995/ssrco,classic_tee,mens,fafafa:ca443f4786,front_alt,square_product,600x600.u2.jpg",
-        "http://www.wearethecity.com/wp-content/uploads/2012/08/MP910221024.jpg",
-        "https://thumbs.dreamstime.com/b/crowdfunding-crowdfunding-written-blackboard-icons-107166337.jpg",
+        "https://o.remove.bg/downloads/31c9e37a-74de-4dcf-a22d-cf55332413e1/vecteezy_fund-raising-and-money-donation-illustration_6901910-removebg-preview.png",
+        "https://o.remove.bg/downloads/802ca3a5-1eaa-4775-910a-c98804320260/c1-removebg-preview.png",
+        "https://o.remove.bg/downloads/b256c6e1-40e7-4380-848b-4d824127270c/istockphoto-1139754723-612x612-transformed-removebg-preview.png",
         "https://imageio.forbes.com/specials-images/imageserve/639337837c344730ef65ce93/Alphabet-letter-wooden-blocks-with-words-GIVE-in-child-and-parents-hands--Family-and/960x0.jpg?format=jpg&width=960",
     ]
 

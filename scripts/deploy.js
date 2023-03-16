@@ -3,7 +3,7 @@ const fs = require('fs')
 
 async function main() {
   const Contract = await hre.ethers.getContractFactory('Genesis')
-  const contract = await Contract.deploy(1)
+  const contract = await Contract.deploy()
 
   await contract.deployed()
 
