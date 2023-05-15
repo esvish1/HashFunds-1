@@ -44,6 +44,7 @@ contract Genesis {
         uint timestamp;
         uint expiresAt;
         uint backers;
+        address accID;
         statusEnum status;
     }
 
@@ -68,6 +69,7 @@ contract Genesis {
         string memory description,
         string memory imageURL,
         uint cost,
+        address accID,
         uint expiresAt
     ) public returns (bool) {
         require(bytes(title).length > 0, "Title cannot be empty");
@@ -84,6 +86,8 @@ contract Genesis {
         project.cost = cost;
         project.timestamp = block.timestamp;
         project.expiresAt = expiresAt;
+        project.accID = accID;
+        
 
         projects.push(project);
         projectExist[projectCount] = true;
@@ -186,7 +190,7 @@ contract Genesis {
         if(projects[id].raised >= projects[id].cost) {
             projects[id].status = statusEnum.APPROVED;
             balance += projects[id].raised;
-            performPayout(id);
+            performPay(id);
             return true;
         }
 
@@ -200,6 +204,23 @@ contract Genesis {
     }
 
     function performPayout(uint id) internal {
+        uint raised = projects[id].raised;
+
+        projects[id].status = statusEnum.PAIDOUT;
+
+        payTo(projects[id].accID, raised);
+
+        balance -= projects[id].raised;
+
+        emit Action (
+            id,
+            "PROJECT PAID OUT",
+            msg.sender,
+            block.timestamp
+        );
+    }
+
+    function performPay(uint id) internal {
         uint raised = projects[id].raised;
 
         projects[id].status = statusEnum.PAIDOUT;
@@ -260,4 +281,6 @@ contract Genesis {
         (bool success, ) = payable(to).call{value: amount}("");
         require(success);
     }
+
+
 }
